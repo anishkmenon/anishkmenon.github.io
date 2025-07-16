@@ -14,7 +14,7 @@ const Footer = () => {
               <span>anish@yourdomain.com</span>
             </a>
             <a
-              href="https://linkedin.com/in/anishmenon"
+              href="https://linkedin.com/in/anishkmenon"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-smooth"
