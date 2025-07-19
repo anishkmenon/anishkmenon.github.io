@@ -1,26 +1,31 @@
-import { Github, Instagram } from 'lucide-react';
+import { Mail, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border mt-16">
-      <div className="container-minimal py-8">
-        <div className="flex justify-center space-x-6">
-          <a 
-            href="https://github.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-smooth"
-          >
-            <Github size={16} />
-          </a>
-          <a 
-            href="https://instagram.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-foreground transition-smooth"
-          >
-            <Instagram size={16} />
-          </a>
+    <footer className="bg-muted/50 py-12">
+      <div className="container-custom">
+        <div className="flex flex-col items-center space-y-4">
+          <div className="flex space-x-6">
+            <a
+              href="mailto:anish@yourdomain.com"
+              className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-smooth"
+            >
+              <Mail size={20} />
+              <span>anish@yourdomain.com</span>
+            </a>
+            <a
+              href="https://linkedin.com/in/anishkmenon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-smooth"
+            >
+              <Linkedin size={20} />
+              <span>LinkedIn</span>
+            </a>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            © 2024 Anish Menon. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

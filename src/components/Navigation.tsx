@@ -8,18 +8,21 @@ const Navigation = () => {
   const location = useLocation();
 
   const navItems = [
+    { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Blog', path: '/blog' },
-    { name: 'Work', path: '/services' },
+    { name: 'Services', path: '/services' },
+    { name: 'Testimonials', path: '/testimonials' },
+    { name: 'Events', path: '/events' },
+    { name: 'Contact', path: '/contact' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="border-b border-border">
-      <div className="container-minimal">
+    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/85 border-b border-border">
+      <div className="container-custom">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="text-lg font-normal text-foreground hover:text-primary transition-smooth">
+          <Link to="/" className="text-xl font-bold text-primary">
             Anish Menon
           </Link>
 
@@ -29,7 +32,7 @@ const Navigation = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-sm font-normal transition-smooth hover:text-primary ${
+                className={`text-sm font-medium transition-smooth hover:text-primary ${
                   isActive(item.path) ? 'text-primary' : 'text-muted-foreground'
                 }`}
               >
@@ -57,7 +60,7 @@ const Navigation = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`text-sm font-normal py-2 transition-smooth hover:text-primary ${
+                  className={`text-sm font-medium py-2 transition-smooth hover:text-primary ${
                     isActive(item.path) ? 'text-primary' : 'text-muted-foreground'
                   }`}
                   onClick={() => setIsOpen(false)}
