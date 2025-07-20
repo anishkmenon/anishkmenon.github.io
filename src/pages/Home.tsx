@@ -12,7 +12,7 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h1 className="hero-text text-foreground">
-                Helping people grow into who they already are — not who they're told to be.
+                Helping people grow into who they already are — not who they're told to be
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 I design experiential learning journeys where people feel safe to be human—where
